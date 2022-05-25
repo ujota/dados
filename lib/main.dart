@@ -42,16 +42,6 @@ class __novaPaginaDadosState extends State<_novaPaginaDados> {
               child: Image.asset('images-bandeira/bandeira$bandeira1.png'),
             ),
           ),
-          Expanded(
-            child: FlatButton(
-              onPressed: () {
-                setState(() {
-                  bandeira2 = random.nextInt(4) + 1;
-                });
-              },
-              child: Image.asset('images-bandeira/bandeira$bandeira2.png'),
-            ),
-          ),
         ],
       ),
     );
