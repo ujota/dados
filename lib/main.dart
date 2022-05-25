@@ -5,10 +5,10 @@ void main() {
   return runApp(
     MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.black,
         appBar: AppBar(
           title: Text('Dados'),
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.black,
         ),
         body: _novaPaginaDados(),
       ),
@@ -25,8 +25,8 @@ class _novaPaginaDados extends StatefulWidget {
 
 class __novaPaginaDadosState extends State<_novaPaginaDados> {
   Random random = new Random();
-  int dado1 = 1;
-  int dado2 = 2;
+  int bandeira1 = 1;
+  int bandeira2 = 2;
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -36,20 +36,20 @@ class __novaPaginaDadosState extends State<_novaPaginaDados> {
             child: FlatButton(
               onPressed: () {
                 setState(() {
-                  dado1 = random.nextInt(6) + 1;
+                  bandeira1 = random.nextInt(4) + 1;
                 });
               },
-              child: Image.asset('images/dado$dado1.png'),
+              child: Image.asset('images-bandeira/bandeira$bandeira1.png'),
             ),
           ),
           Expanded(
             child: FlatButton(
               onPressed: () {
                 setState(() {
-                  dado2 = random.nextInt(6) + 1;
+                  bandeira2 = random.nextInt(4) + 1;
                 });
               },
-              child: Image.asset('images/dado$dado2.png'),
+              child: Image.asset('images-bandeira/bandeira$bandeira2.png'),
             ),
           ),
         ],
