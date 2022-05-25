@@ -5,10 +5,10 @@ void main() {
   return runApp(
     MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.black,
         appBar: AppBar(
           title: Text('Dados'),
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.black,
         ),
         body: _novaPaginaDados(),
       ),
